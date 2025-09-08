@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: rgba(37, 34, 34, 0.9);
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #43eff8;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.navMenu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.navLink:hover {
+  color: #43eff8;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.loginIcon {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  font-size: 1.75rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginIcon:hover {
+  background-color: #43eff8;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: relative;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.hamburgerIcon,
+.closeIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+.closeIcon {
+  opacity: 0;
+}
+
+.hamburger.active .hamburgerIcon {
+  opacity: 0;
+}
+
+.hamburger.active .closeIcon {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .navMenu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding: 2rem 0;
+    gap: 0;
+  }
+
+  .navMenu.active {
+    left: 0;
+  }
+
+  .navLink {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .loginIcon {
+    display: none;
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="ResponsiveNavbar.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navContainer">
+        <div class="logo">
+          <img src="website.png" alt="Logo" />
+          AMNIL
+        </div>
+
+        <ul class="navMenu">
+          <li><a href="#home" class="navLink">HOME</a></li>
+          <li><a href="#about" class="navLink">ABOUT</a></li>
+          <li><a href="#services" class="navLink">SERVICES</a></li>
+          <li><a href="#contact" class="navLink">CONTACT</a></li>
+        </ul>
+
+        <a href="#login" class="loginIcon"> 👨🏻‍💼 </a>
+
+        <div class="hamburger">
+          <span class="hamburgerIcon">☰</span>
+          <span class="closeIcon">✕</span>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".navMenu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
