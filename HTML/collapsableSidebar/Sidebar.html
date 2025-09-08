@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collapsible Sidebar</title>
+    <link rel="stylesheet" href="Sidebar.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="toggle" />
+
+    <label for="toggle" class="hamburger"></label>
+
+    <div class="sidebar">
+      <div class="sidebar-header"></div>
+
+      <ul class="menu">
+        <li>
+          <a href="#"
+            ><span class="icon">🏠</span><span class="menu-text">Home</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><span class="icon">📄</span><span class="menu-text">About</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><span class="icon">📞</span
+            ><span class="menu-text">Contact</span></a
+          >
+        </li>
+        <li class="services">
+          <a href="#">
+            <span class="icon">⚙️</span><span class="menu-text">Services</span>
+            <span class="arrow">▼</span>
+          </a>
+          <ul class="submenu">
+            <li>
+              <a href="#"><span class="menu-text">Web Design</span></a>
+            </li>
+            <li>
+              <a href="#"><span class="menu-text">Development</span></a>
+            </li>
+            <li>
+              <a href="#"><span class="menu-text">Consulting</span></a>
+            </li>
+            <li>
+              <a href="#"><span class="menu-text">Support</span></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <div class="content-card">
+        <h1>Collapsible Sidebar</h1>
+      </div>
+    </div>
+  </body>
+</html>
