@@ -1,0 +1,101 @@
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 8px 14px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  padding: 12px 15px;
+  margin: 8px 0;
+  background: #f1f4f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+li:hover {
+  background: #e7ecf5;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-input {
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 65%;
+  outline: none;
+}
+
+.save-btn {
+  background: #28a745;
+}
+
+.save-btn:hover {
+  background: #1e7e34;
+}
+
+.cancel-btn {
+  background: #dc3545;
+}
+
+.cancel-btn:hover {
+  background: #a71d2a;
+}
