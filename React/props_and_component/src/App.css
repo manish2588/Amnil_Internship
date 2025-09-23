@@ -1,14 +1,17 @@
-
-
-*{
+* {
   padding: 10px;
   margin: 0px;
   box-sizing: border-box;
 }
 .buttonComponent {
-  padding:15px;
+  padding: 15px;
   border: 1px solid black;
   font-size: medium;
   border-radius: 10px;
   margin: 10px;
+}
+input{
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 5px;
 }
