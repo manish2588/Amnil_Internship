@@ -1,0 +1,37 @@
+/* Light Theme */
+.light-theme {
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  --background-color: #ffffff;
+  --text-color: #1f2937;
+  --card-background: #f8fafc;
+  --border-color: #e5e7eb;
+}
+
+/* Dark Theme  */
+.dark-theme {
+  --primary-color: #3b82f6;
+  --secondary-color: #60a5fa;
+  --background-color: #111827;
+  --text-color: #f9fafb;
+  --card-background: #1f2937;
+  --border-color: #374151;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
